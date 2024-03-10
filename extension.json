@@ -1,0 +1,50 @@
+{
+	"name": "ConfirmUntranslatedLinks",
+	"version": "0.1.0",
+	"author": [
+		"Dror S. [FFS] ([https://www.kolzchut.org.il Kol-Zchut])"
+	],
+	"url": "https://github.com/kolzchut/mediawiki-extensions-ConfirmUntranslatedLinks",
+	"descriptionmsg": "ConfirmUntranslatedLinks-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.35.0",
+		"extensions": {
+			"ClassifyInterwikiLinks": "*"
+		}
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\ConfirmUntranslatedLinks\\": "src/"
+	},
+	"HookHandlers": {
+		"ConfirmUntranslatedLinksHooks": {
+			"class": "MediaWiki\\Extension\\ConfirmUntranslatedLinks\\Hooks"
+		}
+	},
+	"Hooks": {
+		"BeforePageDisplay": "ConfirmUntranslatedLinksHooks"
+	},
+	"MessagesDirs": {
+		"ConfirmUntranslatedLinks": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.confirmUntranslatedLinks": {
+			"localBasePath": "resources/ext.confirmUntranslatedLinks",
+			"remoteExtPath": "ConfirmUntranslatedLinks/resources/ext.confirmUntranslatedLinks",
+			"dependencies": [],
+			"styles": [],
+			"packageFiles": [
+				"init.js"
+			],
+			"messages": [
+				"confirmuntranslatedlinks-confirm-checkbox",
+				"confirmuntranslatedlinks-confirm-title",
+				"confirmuntranslatedlinks-confirm-text"
+			]
+		}
+	},
+	"manifest_version": 2
+}

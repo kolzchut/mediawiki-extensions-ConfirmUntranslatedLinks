@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Your Name"
+		]
+	},
+	"confirmuntranslatedlinks-desc": "Shows a confirmation dialog when the user clicks an untranslated link",
+	"confirmuntranslatedlinks-confirm-checkbox": "אל תציגו שוב",
+	"confirmuntranslatedlinks-confirm-title": "הקישור שלחצתם עליו עדיין לא תורגם",
+	"confirmuntranslatedlinks-confirm-text": "האם תרצו להמשיך לערך בעברית?"
+
+
+}
